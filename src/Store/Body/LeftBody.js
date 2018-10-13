@@ -6,14 +6,21 @@ import './Body.css';
 
 // COMPONENTS
 import PersonalInfo from './PersonalInfo';
+<<<<<<< HEAD
 import LeftEdit from './LeftEdit';
+=======
+>>>>>>> 0cda4b9777d99b51c3e3169e983bc1c121293b50
 
 const LeftBody = props => {
   let page = props.activePage;
 
   if (page === 1) {
     return(
+<<<<<<< HEAD
       <LeftEdit />
+=======
+      <div></div>
+>>>>>>> 0cda4b9777d99b51c3e3169e983bc1c121293b50
     )
   } else if (page === 2) {
     return(

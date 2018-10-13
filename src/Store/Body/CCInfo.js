@@ -1,7 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+<<<<<<< HEAD
 import Input from './Input';
 import Stats from './Stats';
+=======
+import Input from './Input'
+
+>>>>>>> 0cda4b9777d99b51c3e3169e983bc1c121293b50
 // IMAGES
 import QuestionMark from './../../sources/img/question-mark.png'
 
@@ -40,7 +45,24 @@ const CCInfo = props => {
         </div>
       </fieldset>
 
+<<<<<<< HEAD
       <Stats />
+=======
+      <div id="cart-stats">
+        <div className="stats">
+          <span>cart total:</span>
+          <span>something</span>
+        </div>
+        <div className="stats">
+          <span>cart total:</span>
+          <span>something</span>
+        </div>
+        <div className="stats">
+          <span>cart total:</span>
+          <span>something</span>
+        </div>
+      </div>
+>>>>>>> 0cda4b9777d99b51c3e3169e983bc1c121293b50
 
       <div id="terms-conditions">
         <div className="checkbox">
