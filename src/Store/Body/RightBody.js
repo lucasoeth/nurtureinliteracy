@@ -6,21 +6,14 @@ import './Body.css';
 
 // COMPONENTS
 import CCInfo from './CCInfo';
-<<<<<<< HEAD
 import RightEdit from './RightEdit';
-=======
->>>>>>> 0cda4b9777d99b51c3e3169e983bc1c121293b50
 
 const RightBody = props => {
   let page = props.activePage;
 
   if (page === 1) {
     return(
-<<<<<<< HEAD
       <RightEdit />
-=======
-      <div></div>
->>>>>>> 0cda4b9777d99b51c3e3169e983bc1c121293b50
     )
   } else if (page === 2) {
     return(

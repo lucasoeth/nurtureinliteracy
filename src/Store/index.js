@@ -50,10 +50,7 @@ class Store extends Component {
 
   render() {
     return(
-<<<<<<< HEAD
-=======
       <form>
->>>>>>> 0cda4b9777d99b51c3e3169e983bc1c121293b50
         <div id="cart">
 
           <Header
@@ -77,10 +74,7 @@ class Store extends Component {
           <RightFooter activePage={ this.state.activePage } />
 
         </div>
-<<<<<<< HEAD
-=======
       </form>
->>>>>>> 0cda4b9777d99b51c3e3169e983bc1c121293b50
     )
   }
 }
