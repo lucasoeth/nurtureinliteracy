@@ -1,0 +1,18 @@
+#services-hover .cuadro_intro_hover {
+  background-color: #ccc;
+}
+
+#services-hover h3 {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  padding: 10px;
+}
+
+#services-hover h3 + p {
+  font-size: 14px;
+  margin-top: -20px;
+}
+
+p {
+  font-family: Raleway, Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}

@@ -1,0 +1,60 @@
+:root {
+  --gold: #e5cb51;
+  --silver: #666666;
+  --light-silver: #fff;
+}
+
+::placeholder {
+  color: var(--silver);
+}
+
+h2 {
+  text-align: center;
+  color: var(--light-silver);
+  margin: .3em 0 .2em 0;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+p {
+  font-family: Raleway;
+}
+
+#cart {
+  margin: auto;
+  margin-top: 100px;
+  width: 800px;
+  display: grid;
+  grid-template-areas:
+    "h h"       /* Header */
+    "bl br"     /* Body left right */
+    "fl fr";    /* Footer left right */
+}
+
+@media screen and (max-width: 992px)  {
+  #cart {
+    margin-top: 150px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #cart {
+    width: 400px;
+    display: grid;
+    grid-template-areas:
+      "h"
+      "bl"
+      "fl"
+      "br"
+      "fr";
+  }
+}
+
+@media screen and (max-width: 767px)  {
+  #cart {
+    margin-top: 75px;
+  }
+}

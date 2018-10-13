@@ -1,0 +1,104 @@
+/* LEFT */
+
+#cart-footer-left {
+  grid-area: fl;
+  border-bottom-left-radius: 1em;
+  background-color: black;
+  border-right-width: 0;
+}
+
+#coupon {
+  height: 40px;
+  width: 300px;
+  margin: 0 50px;
+  display: flex;
+}
+
+#coupon-input {
+  width: 200px;
+}
+#coupon-input > input {
+  position: relative;
+  height: 33px;
+  margin: 8.5px 0;
+  padding: 4.5px 10px;
+  right: -75px;
+  width: 25px;
+  opacity: 0;
+  transition: all .2s ease-in;
+}
+
+#coupon-button {
+  width: 100px;
+}
+
+#coupon-button a {
+  position: relative;
+  left: -100px;
+  height: 33px;
+  width: 100px;
+  margin: 8.5px 0;
+  padding: 6px 10px;
+  line-height: 1;
+  transition: all .2s ease-in;
+  font-size: 1.2em;
+}
+
+#cart-footer-left:hover input {
+  width: 200px;
+  right: 0px;
+  opacity: 1;
+}
+
+#cart-footer-left:hover a {
+  left: 0;
+}
+
+#coupon-input > input:focus {
+  outline: none;
+  border: solid var(--gold) 1.5px;
+  box-shadow: 0 0 5px var(--gold);
+}
+
+/* RIGHT */
+
+#cart-footer-right {
+  grid-area: fr;
+  border-bottom-right-radius: 1em;
+  border-left-width: 0;
+}
+
+#submit-button {
+  text-align: center;
+}
+
+#submit-button a {
+  margin: 8.5px 0;
+  padding: 6px 10px;
+  font-size: 1.2em;
+  line-height: 1;
+  height: 33px;
+  width: 100px;
+}
+
+.cart-footer {
+  height: 50px;
+  width: 400px;
+  background-color: black;
+  border: 1.5px solid var(--gold);
+  border-top: 0;
+}
+
+@media screen and (max-width: 900px) {
+  #cart-footer-left {
+    border-radius: 0px;
+    border-right-width: 1.5px;
+    border-bottom: 0;
+  }
+
+  #cart-footer-right {
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    border-left-width: 1.5px;
+  }
+}
