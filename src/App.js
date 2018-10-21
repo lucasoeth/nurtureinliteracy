@@ -15,6 +15,8 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import Store from './Store';
 
+import BootsTest from './BootsTest';
+
 class App extends Component {
   render() {
     return (
@@ -24,6 +26,7 @@ class App extends Component {
 
           <Route exact path='/' component={ Home } />
           <Route exact path='/Store' component={ Store } />
+          <Route exact path='/Test' component={ BootsTest } />
 
           <Route path='/' component={ Footer } />
         </div>

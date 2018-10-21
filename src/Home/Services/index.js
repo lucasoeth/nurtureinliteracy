@@ -13,7 +13,7 @@ const Services = () => {
     <section id="services" className="content-section text-center">
       <div className="services-section">
         <div className="container">
-          <div className="row text-center">
+          <div className="text-center">
             <h2>What Sets Us Apart </h2>
           </div>
           <div className="row" id='services-hover'>

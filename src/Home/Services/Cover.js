@@ -3,10 +3,10 @@ import Letter from './../../sources/img/letter.jpg';
 
 const Cover = () => {
   return(
-    <div className="col-lg-2">
+    <div className="col-xl-2">
       <div className="cuadro_intro_hover ">
         <p>
-          <img src={ Letter } className="img-responsive" alt="" />
+          <img src={ Letter } className="img-fluid" alt="" />
         </p>
         <div className="caption">
           <div className="blur"></div>

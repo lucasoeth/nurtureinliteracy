@@ -5,8 +5,8 @@ import PropTypes from 'prop-types';
 import './Body.css';
 
 // COMPONENTS
-import PersonalInfo from './PersonalInfo';
-import LeftEdit from './LeftEdit';
+import { PersonalInfo } from './Payment';
+import { LeftEdit } from './Edit';
 
 const LeftBody = props => {
   let page = props.activePage;

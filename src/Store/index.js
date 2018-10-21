@@ -13,7 +13,7 @@ import LeftFooter from './Footer/LeftFooter';
 class Store extends Component {
 
   state =  {
-    activePage: 2,
+    activePage: 1,
     PersonalInfo: {
       firstName: '',
       lastName: '',
@@ -50,31 +50,29 @@ class Store extends Component {
 
   render() {
     return(
-      <form>
-        <div id="cart">
+      <div id="cart">
 
-          <Header
-            activePage={ this.state.activePage }
-            changeActivePageTo={ this.changeActivePageTo }
-          />
+        <Header
+          activePage={ this.state.activePage }
+          changeActivePageTo={ this.changeActivePageTo }
+        />
 
-          <LeftBody
-            activePage={ this.state.activePage }
-            PersonalInfo={ this.state.PersonalInfo }
-            changeInputFor={ this.changeInputFor }
-          />
+        <LeftBody
+          activePage={ this.state.activePage }
+          PersonalInfo={ this.state.PersonalInfo }
+          changeInputFor={ this.changeInputFor }
+        />
 
-          <RightBody
-            activePage={ this.state.activePage }
-            CCInfo={ this.state.CCInfo }
-            changeInputFor={ this.changeInputFor }
-          />
+        <RightBody
+          activePage={ this.state.activePage }
+          CCInfo={ this.state.CCInfo }
+          changeInputFor={ this.changeInputFor }
+        />
 
-          <LeftFooter activePage={ this.state.activePage } />
-          <RightFooter activePage={ this.state.activePage } />
+        <LeftFooter activePage={ this.state.activePage } />
+        <RightFooter activePage={ this.state.activePage } />
 
-        </div>
-      </form>
+      </div>
     )
   }
 }

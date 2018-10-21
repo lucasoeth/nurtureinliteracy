@@ -4,6 +4,9 @@
 import './jquery'
 import 'jquery/dist/jquery.easing.js'
 
+// import './../sources/bootstrap4.0/bootstrap.min.css';
+// import './../sources/bootstrap4.0/bootstrap.js';
+
 import 'bootstrap/dist/js/bootstrap.min.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 

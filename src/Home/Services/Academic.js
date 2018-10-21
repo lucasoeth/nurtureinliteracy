@@ -3,10 +3,10 @@ import Writer from './../../sources/img/writer.png';
 
 const Academic = () => {
   return(
-    <div className="col-lg-2">
+    <div className="col-xl-2">
       <div className="cuadro_intro_hover ">
         <p>
-          <img src={ Writer } className="img-responsive" alt="" />
+          <img src={ Writer } className="img-fluid" alt="" />
         </p>
         <div className="caption">
           <div className="blur"></div>

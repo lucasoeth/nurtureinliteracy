@@ -5,8 +5,8 @@ import PropTypes from 'prop-types';
 import './Body.css';
 
 // COMPONENTS
-import CCInfo from './CCInfo';
-import RightEdit from './RightEdit';
+import { CCInfo } from './Payment';
+import { RightEdit } from './Edit';
 
 const RightBody = props => {
   let page = props.activePage;

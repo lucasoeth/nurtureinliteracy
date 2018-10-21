@@ -1,0 +1,14 @@
+#cart-body-left #carouselExampleControls {
+  height: 100px;
+  width: 100px; }
+
+#cart-body-left .slideshow {
+  height: 300px;
+  width: 300px;
+  margin: 50px auto; }
+  #cart-body-left .slideshow .col-lg-2 {
+    width: 100%; }
+    #cart-body-left .slideshow .col-lg-2 .cuadro_intro_hover {
+      height: 280px; }
+      #cart-body-left .slideshow .col-lg-2 .cuadro_intro_hover .caption {
+        top: 250px; }

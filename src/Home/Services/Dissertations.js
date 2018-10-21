@@ -3,10 +3,10 @@ import Books from './../../sources/img/books.png';
 
 const Dissertations = () => {
   return(
-    <div className="col-lg-2">
+    <div className="col-xl-2">
       <div className="cuadro_intro_hover ">
         <p>
-          <img src={ Books } className="img-responsive" alt="" />
+          <img src={ Books } className="img-fluid" alt="" />
         </p>
         <div className="caption">
           <div className="blur"></div>

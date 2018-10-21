@@ -51,6 +51,7 @@
   transition: all 0.2s ease-out;
   margin-left: 10px;
   display: inline;
+  font-weight: 600;
 }
 
 input:placeholder-shown + label {
@@ -151,7 +152,6 @@ input:placeholder-shown + label {
   left: 8.5px;
   width: 10px;
   height: 20px;
-  /* background: black; */
   border: solid black;
   border-width: 0 3px 3px 0;
   transform: rotate(45deg);

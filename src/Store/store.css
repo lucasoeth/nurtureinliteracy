@@ -28,6 +28,7 @@ p {
   margin-top: 100px;
   width: 800px;
   display: grid;
+  font-size: 14px;
   grid-template-areas:
     "h h"       /* Header */
     "bl br"     /* Body left right */

@@ -4,7 +4,7 @@ import Input from './Input';
 import Stats from './Stats';
 
 // IMAGES
-import QuestionMark from './../../sources/img/question-mark.png'
+import QuestionMark from './../../../sources/img/question-mark.png'
 
 const CCInfo = props => {
   return(

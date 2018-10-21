@@ -5,8 +5,8 @@ import Header from './Header';
 import About from './About';
 import Services from './Services';
 import Publications from './Publications';
+import Submissions from './Submissions';
 import Contact from './Contact';
-import Download from './Download';
 
 class Home extends Component {
 
@@ -17,8 +17,8 @@ class Home extends Component {
         <About />
         <Services />
         <Publications />
+        <Submissions />
         <Contact />
-        <Download />
       </div>
     )
   }

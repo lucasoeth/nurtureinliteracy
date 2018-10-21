@@ -83,6 +83,10 @@
 	margin: 0 auto;
 }
 
+#expand-btn {
+	color: var(--gold);
+}
+
 @keyframes anim-pub-exp-content {
 	0% {
 		max-height: 0;
