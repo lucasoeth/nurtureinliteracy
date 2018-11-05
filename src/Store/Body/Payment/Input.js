@@ -13,7 +13,6 @@ class Input extends PureComponent {
 
     let formattedName = formatName(this.props.name);
 
-    console.log(formattedName + ' was rendered');
     return(
       <div className='input-div' id={ this.props.name }>
         <input

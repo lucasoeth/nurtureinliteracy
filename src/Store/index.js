@@ -14,6 +14,11 @@ class Store extends Component {
 
   state =  {
     activePage: 1,
+    serviceIndex: -1,
+    RightEdit: {
+      details: '',
+      express: false,
+    },
     PersonalInfo: {
       firstName: '',
       lastName: '',
@@ -65,6 +70,7 @@ class Store extends Component {
 
         <RightBody
           activePage={ this.state.activePage }
+          RightEdit={ this.state.RightEdit }
           CCInfo={ this.state.CCInfo }
           changeInputFor={ this.changeInputFor }
         />

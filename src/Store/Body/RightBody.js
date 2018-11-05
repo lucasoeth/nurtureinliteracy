@@ -13,7 +13,10 @@ const RightBody = props => {
 
   if (page === 1) {
     return(
-      <RightEdit />
+      <RightEdit
+        RightEdit={ props.RightEdit }
+        changeInputFor={ props.changeInputFor }
+      />
     )
   } else if (page === 2) {
     return(
@@ -31,6 +34,10 @@ const RightBody = props => {
 
 RightBody.propTypes = {
   activePage: PropTypes.number.isRequired,
+  RightEdit: PropTypes.shape({
+    details: PropTypes.string.isRequired,
+    express: PropTypes.bool.isRequired,
+  }),
   CCInfo: PropTypes.shape({
     CCNumber: PropTypes.string.isRequired,
     CCDate: PropTypes.string.isRequired,
