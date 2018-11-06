@@ -13,7 +13,11 @@ const LeftBody = props => {
 
   if (page === 1) {
     return(
-      <LeftEdit />
+      <LeftEdit
+        serviceChosenAt={ props.serviceChosenAt }
+        serviceIndex={ props.serviceIndex }
+        serviceLast={ props.serviceLast }
+      />
     )
   } else if (page === 2) {
     return(
@@ -42,6 +46,9 @@ LeftBody.propTypes = {
     city: PropTypes.string.isRequired,
   }).isRequired,
   changeInputFor: PropTypes.func.isRequired,
+  serviceChosenAt: PropTypes.func.isRequired,
+  serviceIndex: PropTypes.number.isRequired,
+  serviceLast: PropTypes.number.isRequired,
 }
 
 export default LeftBody;

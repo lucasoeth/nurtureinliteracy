@@ -1,7 +1,4 @@
 #cart-body-left {
-  .carousel-inner:first-child {
-    background-color: #aaa;
-  }
   .edit-carousel {
     text-align: center;
     .carousel-img {
@@ -49,10 +46,10 @@
 }
 
 #cart-body-right {
-  text-align: center;
-  padding: 20px;
-
   form {
+    .input-group>.image-preview-filename{
+      background-color: white;
+    }
     >div>textarea {
       height: 100px;
     }
@@ -82,4 +79,9 @@
         margin-left:2px;
     }
   }
+}
+
+.right-edit {
+  text-align: center;
+  padding: 20px;
 }

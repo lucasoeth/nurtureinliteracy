@@ -86,7 +86,7 @@ class RightEdit extends Component {
 
   render() {
     return(
-      <div id='cart-body-right' className='cart-body'>
+      <div id='cart-body-right' className='cart-body right-edit'>
         <Form>
           <FormGroup>
             <legend>Upload File</legend>
@@ -123,13 +123,22 @@ class RightEdit extends Component {
             <legend>Radio Buttons</legend>
             <FormGroup check>
               <Label check>
-                <Input type="radio" name="radio1" defaultChecked />{' '}
+                <Input
+                  type="radio"
+                  name="radio1"
+                  onClick={ () => this.props.changeToExpress(false) }
+                  defaultChecked
+                />{' '}
                   Regular 7 Buissness Days
               </Label>
             </FormGroup>
             <FormGroup check>
               <Label check>
-                <Input type="radio" name="radio1" />{' '}
+                <Input
+                  type="radio"
+                  name="radio1"
+                  onClick={ () => this.props.changeToExpress(true) }
+                />{' '}
                   Express 3 Buissness Days ( +$4.99 )
               </Label>
             </FormGroup>

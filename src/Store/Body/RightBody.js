@@ -15,6 +15,7 @@ const RightBody = props => {
     return(
       <RightEdit
         RightEdit={ props.RightEdit }
+        changeToExpress={ props.changeToExpress }
         changeInputFor={ props.changeInputFor }
       />
     )
@@ -38,6 +39,7 @@ RightBody.propTypes = {
     details: PropTypes.string.isRequired,
     express: PropTypes.bool.isRequired,
   }),
+  changeToExpress: PropTypes.func.isRequired,
   CCInfo: PropTypes.shape({
     CCNumber: PropTypes.string.isRequired,
     CCDate: PropTypes.string.isRequired,

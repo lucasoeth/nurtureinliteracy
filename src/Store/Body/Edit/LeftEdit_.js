@@ -5,7 +5,6 @@ import {
   CarouselControl,
   CarouselIndicators,
 } from 'reactstrap';
-// import Cover from './../../../Home/Services/Cover';
 
 // CSS
 import './Edit.css';

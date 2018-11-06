@@ -8,6 +8,12 @@ const RightFooter = props => {
   if (page === 1) {
     return(
       <div className='cart-footer' id='cart-footer-right'>
+        <div id="submit-button">
+          <a
+            className='btn btn-default btn-md'
+            onClick={ () => props.changeActivePageTo(2) }
+          >Next</a>
+        </div>
       </div>
     )
   } else if (page === 2) {
@@ -28,6 +34,7 @@ const RightFooter = props => {
 
 RightFooter.propTypes = {
   activePage: PropTypes.number.isRequired,
+  changeActivePageTo: PropTypes.func.isRequired,
 }
 
 export default RightFooter;

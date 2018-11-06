@@ -15,6 +15,7 @@ class Store extends Component {
   state =  {
     activePage: 1,
     serviceIndex: -1,
+    serviceLast: 0,
     RightEdit: {
       details: '',
       express: false,
@@ -35,7 +36,7 @@ class Store extends Component {
       CCCvv: '',
       termsConditions: false,
     },
-  }
+  };
 
   changeActivePageTo = page => {
     this.setState({
@@ -44,13 +45,37 @@ class Store extends Component {
   };
 
   changeInputFor = (object, category, e) => {
-    console.log(this.state[object][category]);
-    this.setState({
-      [object]: {
-        ...this.state[object],
-        [category]: e.target.value,
+    console.log(e.target.value);
+    const value = e.target.value;
+    this.setState(prevState => {
+      return {
+        [object]: {
+          ...prevState[object],
+          [category]: value,
+        }
       }
     });
+  };
+
+  changeToExpress = bool => {
+    this.setState(prevState => {
+      return {RightEdit: {...prevState.RightEdit,express: bool}}
+    })
+  }
+
+  serviceChosenAt = index => {
+    this.setState(prevState => {
+      var last;
+      if (index === -1) {
+        last = prevState.serviceLast;
+      } else {
+        last = index;
+      }
+      return {
+        serviceIndex: index,
+        serviceLast: last,
+      }
+    })
   }
 
   render() {
@@ -66,17 +91,28 @@ class Store extends Component {
           activePage={ this.state.activePage }
           PersonalInfo={ this.state.PersonalInfo }
           changeInputFor={ this.changeInputFor }
+          serviceChosenAt={ this.serviceChosenAt }
+          serviceIndex={ this.state.serviceIndex }
+          serviceLast={ this.state.serviceLast }
         />
 
         <RightBody
           activePage={ this.state.activePage }
+
           RightEdit={ this.state.RightEdit }
+          changeToExpress={ this.changeToExpress }
+
           CCInfo={ this.state.CCInfo }
           changeInputFor={ this.changeInputFor }
         />
 
-        <LeftFooter activePage={ this.state.activePage } />
-        <RightFooter activePage={ this.state.activePage } />
+        <LeftFooter
+          activePage={ this.state.activePage }
+        />
+        <RightFooter
+          activePage={ this.state.activePage }
+          changeActivePageTo={ this.changeActivePageTo }
+        />
 
       </div>
     )
