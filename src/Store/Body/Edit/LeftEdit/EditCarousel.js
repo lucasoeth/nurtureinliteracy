@@ -69,7 +69,7 @@ class EditCarousel extends Component {
     });
 
     return (
-      <div id='cart-body-left' className='cart-body'>
+      <div id='left-edit' className='cart-body cart-body-left'>
         <Carousel
           activeIndex={activeIndex}
           next={this.next}

@@ -1,4 +1,4 @@
-#cart-body-left {
+#left-edit {
   .edit-carousel {
     text-align: center;
     .carousel-img {
@@ -45,7 +45,9 @@
   }
 }
 
-#cart-body-right {
+#right-edit {
+  text-align: center;
+  padding: 20px;
   form {
     .input-group>.image-preview-filename{
       background-color: white;
@@ -57,12 +59,9 @@
       text-align: left;
     }
     .image-preview-input {
-        position: relative;
+      position: relative;
     	overflow: hidden;
     	margin: 0px;
-        color: #333;
-        background-color: #fff;
-        border-color: #ccc;
     }
     .image-preview-input input[type=file] {
     	position: absolute;
@@ -78,10 +77,24 @@
     .image-preview-input-title {
         margin-left:2px;
     }
+    .glyphicon {
+      color: black;
+      font-size: 14px;
+      margin-right: 5px;
+    }
+    .btn-light {
+      border-color: #ccc;
+    }
+    .file-required {
+      border: red 1px solid;
+      span {
+        color: red;
+      }
+    }
+    .file-required-label {
+      position: absolute;
+      color: red;
+      right: 16px;
+    }
   }
-}
-
-.right-edit {
-  text-align: center;
-  padding: 20px;
 }

@@ -16,3 +16,7 @@
 p {
   font-family: Raleway, Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
+
+.container>.navbar-toggler {
+	color: white;
+}

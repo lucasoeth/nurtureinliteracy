@@ -1,5 +1,5 @@
 #cart-header {
-  width: 800px;
+  width: 806px;
   background-color: black;
   border: 1.5px solid var(--gold);
   border-bottom: 0px;
@@ -51,7 +51,7 @@
 
 @media screen and (max-width: 900px) {
   #cart-header {
-    width: 400px;
+    width: 403px;
   }
 
   .header-icon {

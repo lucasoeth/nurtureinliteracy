@@ -20,7 +20,10 @@ const RightFooter = props => {
     return(
       <div className="cart-footer" id="cart-footer-right">
         <div id="submit-button">
-          <a className='btn btn-default btn-md'>submit</a>
+          <a
+            className='btn btn-default btn-md'
+            onClick={ props.validate }
+          >submit</a>
         </div>
       </div>
     )
@@ -35,6 +38,7 @@ const RightFooter = props => {
 RightFooter.propTypes = {
   activePage: PropTypes.number.isRequired,
   changeActivePageTo: PropTypes.func.isRequired,
+  validate: PropTypes.func.isRequired,
 }
 
 export default RightFooter;

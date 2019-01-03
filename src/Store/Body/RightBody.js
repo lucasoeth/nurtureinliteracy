@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import './Body.css';
 
 // COMPONENTS
-import { CCInfo } from './Payment';
+import { RightPayment } from './Payment';
 import { RightEdit } from './Edit';
 
 const RightBody = props => {
@@ -15,36 +15,42 @@ const RightBody = props => {
     return(
       <RightEdit
         RightEdit={ props.RightEdit }
-        changeToExpress={ props.changeToExpress }
+        changeExpressTo={ props.changeExpressTo }
         changeInputFor={ props.changeInputFor }
+        changeUploadedTo={ props.changeUploadedTo }
+        uploaded={ props.uploaded }
       />
     )
   } else if (page === 2) {
     return(
-      <CCInfo
-        CCInfo={ props.CCInfo }
+      <RightPayment
+        RightPayment={ props.RightPayment }
         changeInputFor={ props.changeInputFor }
       />
     )
   } else {
     return(
       <div></div>
-    )
+    );
   }
 }
 
 RightBody.propTypes = {
   activePage: PropTypes.number.isRequired,
+  //Edit
   RightEdit: PropTypes.shape({
     details: PropTypes.string.isRequired,
     express: PropTypes.bool.isRequired,
   }),
-  changeToExpress: PropTypes.func.isRequired,
-  CCInfo: PropTypes.shape({
-    CCNumber: PropTypes.string.isRequired,
-    CCDate: PropTypes.string.isRequired,
-    CCCvv:  PropTypes.string.isRequired,
-    termsConditions: PropTypes.bool.isRequired,
+  changeExpressTo: PropTypes.func.isRequired,
+  changeUploadedTo: PropTypes.func.isRequired,
+  uploaded: PropTypes.bool,
+  //Payment
+  RightPayment: PropTypes.shape({
+    cNumber: PropTypes.string.isRequired,
+    cDate: PropTypes.string.isRequired,
+    cCvv:  PropTypes.string.isRequired,
+    termsAccepted: PropTypes.bool.isRequired,
   }).isRequired,
   changeInputFor: PropTypes.func.isRequired,
 }

@@ -10,43 +10,9 @@ import {
 class RightEdit extends Component {
 
   componentDidMount = () => {
-      this.handleClick();
-    };
-
-  handleClick = () => {
-    $(document).on('click', '#close-preview', function(){
-    $('.image-preview').popover('hide');
-    // Hover befor close the preview
-    $('.image-preview').hover(
-        function () {
-           $('.image-preview').popover('show');
-        },
-         function () {
-           $('.image-preview').popover('hide');
-        }
-        );
-    });
-
     $(function() {
-        // Create the close button
-        var closebtn = $('<button/>', {
-            type:"button",
-            text: 'x',
-            id: 'close-preview',
-            style: 'font-size: initial;',
-        });
-        closebtn.attr("class","close pull-right");
-        // Set the popover default content
-        $('.image-preview').popover({
-            trigger:'manual',
-            html:true,
-            title: "<strong style='color: black; text-transform: capitalize'>Preview</strong>"+$(closebtn)[0].outerHTML,
-            content: "There's no image",
-            placement:'bottom'
-        });
         // Clear event
         $('.image-preview-clear').click(function(){
-            $('.image-preview').attr("data-content","").popover('hide');
             $('.image-preview-filename').val("");
             $('.image-preview-clear').hide();
             $('.image-preview-input input:file').val("");
@@ -54,11 +20,6 @@ class RightEdit extends Component {
         });
         // Create the preview image
         $(".image-preview-input input:file").change(function (){
-            var img = $('<img/>', {
-                id: 'dynamic',
-                width:250,
-                height:200
-            });
             var file = this.files[0];
             var reader = new FileReader();
             // Set preview image into the popover data-content
@@ -66,8 +27,6 @@ class RightEdit extends Component {
                 $(".image-preview-input-title").text("Change");
                 $(".image-preview-clear").show();
                 $(".image-preview-filename").val(file.name);
-                img.attr('src', e.target.result);
-                $(".image-preview").attr("data-content",$(img)[0].outerHTML).popover("show");
             }
             reader.readAsDataURL(file);
         });
@@ -86,19 +45,20 @@ class RightEdit extends Component {
 
   render() {
     return(
-      <div id='cart-body-right' className='cart-body right-edit'>
+      <div id='right-edit' className='cart-body cart-body-right'>
         <Form>
           <FormGroup>
             <legend>Upload File</legend>
+
             <div className='row'>
               <div className="col-xl-12">
                   <div className="input-group image-preview">
                       <input type="text" className="form-control image-preview-filename" disabled="disabled" />
                       <span className="input-group-btn">
-                          <button type="button" className="btn btn-secondary image-preview-clear" style={{display: 'none'}}>
+                          <button type="button" className="btn btn-light image-preview-clear" style={{display: 'none',}}>
                               <span className="glyphicon glyphicon-remove"></span> Clear
                           </button>
-                          <div className="btn btn-secondary image-preview-input">
+                          <div className="btn btn-light image-preview-input">
                               <span className="glyphicon glyphicon-folder-open"></span>
                               <span className="image-preview-input-title">Browse</span>
                               <input type="file" accept=".pdf, .docx" name="input-file-preview"/>

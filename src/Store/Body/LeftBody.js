@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import './Body.css';
 
 // COMPONENTS
-import { PersonalInfo } from './Payment';
+import { LeftPayment } from './Payment';
 import { LeftEdit } from './Edit';
 
 const LeftBody = props => {
@@ -21,9 +21,10 @@ const LeftBody = props => {
     )
   } else if (page === 2) {
     return(
-      <PersonalInfo
-        PersonalInfo={ props.PersonalInfo }
+      <LeftPayment
+        LeftPayment={ props.LeftPayment }
         changeInputFor={ props.changeInputFor }
+        valid={props.valid}
       />
     )
   } else {
@@ -35,9 +36,15 @@ const LeftBody = props => {
 
 LeftBody.propTypes = {
   activePage: PropTypes.number.isRequired,
-  PersonalInfo: PropTypes.shape({
-    firstName: PropTypes.string.isRequired,
-    lastName: PropTypes.string.isRequired,
+  //Edit
+  changeInputFor: PropTypes.func.isRequired,
+  serviceChosenAt: PropTypes.func.isRequired,
+  serviceIndex: PropTypes.number.isRequired,
+  serviceLast: PropTypes.number.isRequired,
+  //Payment
+  LeftPayment: PropTypes.shape({
+    first: PropTypes.string.isRequired,
+    last: PropTypes.string.isRequired,
     email: PropTypes.string.isRequired,
     number: PropTypes.string.isRequired,
     address: PropTypes.string.isRequired,
@@ -45,10 +52,6 @@ LeftBody.propTypes = {
     zip: PropTypes.string.isRequired,
     city: PropTypes.string.isRequired,
   }).isRequired,
-  changeInputFor: PropTypes.func.isRequired,
-  serviceChosenAt: PropTypes.func.isRequired,
-  serviceIndex: PropTypes.number.isRequired,
-  serviceLast: PropTypes.number.isRequired,
 }
 
 export default LeftBody;

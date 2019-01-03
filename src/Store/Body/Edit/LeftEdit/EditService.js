@@ -5,7 +5,7 @@ const EditService = props => {
   const item = props.item;
 
   return (
-    <div id='cart-body-left' className='cart-body'>
+    <div id='left-edit' className='cart-body cart-body-left'>
       <div className='edit-carousel'>
         <div className={item.id === 5 ? 'carousel-img last' : 'carousel-img'}>
           <img

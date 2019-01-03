@@ -1,4 +1,6 @@
-import CCInfo from './CCInfo';
-import PersonalInfo from './PersonalInfo';
+import LeftPayment from './LeftPayment';
+import RightPayment from './RightPayment';
 
-export { CCInfo, PersonalInfo };
+import './Payment.css'
+
+export { RightPayment, LeftPayment };
