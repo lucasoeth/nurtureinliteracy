@@ -72,30 +72,32 @@ class Publications extends Component {
 
   render() {
     return (
-      <section id="publications" className="container content-section text-center">
-        <div className="pub-head">
-          <h2>Publications</h2>
-        </div>
-        <div className="publications-header">
-          <div className="pub-img">
-            <img src={ ChineseBook } width="306px" height="210px" alt='Chinese Book' />
+      <section id="publications" className="content-section text-center">
+        <div className='publications-bg'>
+          <div className="pub-head">
+            <h2>Publications</h2>
           </div>
-          <div className="pub-intro">
-            <p>Something you want to say about your works</p>
+          <div className="publications-header">
+            <div className="pub-img">
+              <img src={ PenQuill } width="250px" height="300px" alt='Pen and Quill' />
+            </div>
+            <div className="pub-intro">
+              <p>Something you want to say about your works</p>
+            </div>
+            <div className="pub-img">
+              <img src={ ChineseBook } width="306px" height="210px" alt='Chinese Book' />
+            </div>
           </div>
-          <div className="pub-img">
-            <img src={ PenQuill } width="250px" height="300px" alt='Pen and Quill' />
-          </div>
-        </div>
-        <div className="publications-body">
-          <div className="pub-lit">
-            <a className="btn btn-default btn-lg" id="expand-btn" onClick={ () => this.toggleContent(1) }>Literary</a>
-          </div>
-          <div className="pub-ped">
-            <a className="btn btn-default btn-lg" id="expand-btn" onClick={ () => this.toggleContent(2) }>Pedagogical</a>
-          </div>
-          <div className="pub-cre">
-            <a className="btn btn-default btn-lg" id="expand-btn" onClick={ () => this.toggleContent(3) }>Creative</a>
+          <div className="publications-body">
+            <div className="pub-lit">
+              <a className="btn btn-default btn-lg" id="expand-btn" onClick={ () => this.toggleContent(1) }>Literary</a>
+            </div>
+            <div className="pub-ped">
+              <a className="btn btn-default btn-lg" id="expand-btn" onClick={ () => this.toggleContent(2) }>Pedagogical</a>
+            </div>
+            <div className="pub-cre">
+              <a className="btn btn-default btn-lg" id="expand-btn" onClick={ () => this.toggleContent(3) }>Creative</a>
+            </div>
           </div>
         </div>
         {this.displayExpandedContent()}

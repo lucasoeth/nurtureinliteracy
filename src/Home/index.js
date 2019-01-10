@@ -5,7 +5,7 @@ import Header from './Header';
 import About from './About';
 import Services from './Services';
 import Publications from './Publications';
-import Submissions from './Submissions';
+import Submit from './Submit';
 import Contact from './Contact';
 
 class Home extends Component {
@@ -16,8 +16,8 @@ class Home extends Component {
         <Header />
         <About />
         <Services />
+        <Submit />
         <Publications />
-        <Submissions />
         <Contact />
       </div>
     )

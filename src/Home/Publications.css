@@ -1,7 +1,23 @@
+#publications {
+	padding-top: 30px !important;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.publications-bg {
+	padding-top: 30px;
+	background: url(./../sources/img/downloads-bg.jpg) center center no-repeat #000;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
 .publications-header {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	margin-bottom: 100px;
+	margin-bottom: 15px;
 	align-items: center;
 }
 .pub-intro {
@@ -14,6 +30,7 @@
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 30px;
+	padding-bottom: 30px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -22,6 +39,12 @@
 	}
 	.pub-img {
 		margin-top: 50px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	#submit > div > div:nth-child(3) {
+		margin-top: 50px !important;
 	}
 }
 
@@ -46,7 +69,7 @@
 /*Publications Expand Container*/
 .pub-exp-container > div{
 	background-color: black;
-	margin-top: 40px;
+	margin: 0 30px;
 	padding: 30px 50px;
 	border: 2px solid #e5cb51;
 	border-radius: 10px;
@@ -104,4 +127,13 @@
 
 #submissions div > a {
 	margin-bottom: 50px;
+}
+
+.download-section {
+	margin-bottom: -132px;
+}
+
+.download-section > div{
+	margin-bottom: 132px;
+	margin-top: 88px;
 }

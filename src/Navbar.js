@@ -3,7 +3,7 @@ import React from 'react';
 const Navbar = props => {
   var home = (props.location.pathname === '/');
 
-  const NavLinks = ["about", "services", "publications", "submissions", "contact"];
+  const NavLinks = ["about", "services", "submit", "publications", "contact"];
 
   return(
     <nav className="navbar navbar-custom fixed-top navbar-expand-md">
