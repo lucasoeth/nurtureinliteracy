@@ -67,19 +67,24 @@
 	}
 }
 /*Publications Expand Container*/
-.pub-exp-container > div{
+.pub-exp-container {
 	background-color: black;
 	margin: 0 30px;
 	padding: 30px 50px;
 	border: 2px solid #e5cb51;
 	border-radius: 10px;
+	animation: anim-pub-exp-container 0.5s;
+}
+
+.pub-exp-container > div{
+	padding: 10px 0;
 	display: grid;
 	grid-template-columns: 4fr 1fr;
 	grid-template-rows: 1fr;
 	grid-column-gap: 30px;
 	grid-row-gap: 10px;
 
-	animation: anim-pub-exp-container 0.5s;
+	/* animation: anim-pub-exp-container 0.5s; */
 }
 
 @keyframes anim-pub-exp-container {

@@ -11,16 +11,24 @@ class Publications extends Component {
   expandedContent = [
     {
       name: 'Intellectual Power Masks Mastery--Distortion in the Mind of the Colonized',
-      index: 1,
+      index: 1
     },
     {
-      name: 'Rhetoric & Composition - Freshman Composition Instruction',
-      index: 2,
+      name: 'LHDA--Hydropolitics--Ecocide Causing Water Shortage and Harm to Lesotho’s Human Security',
+      index: 1
     },
     {
-      name: 'Superior Sisters',
-      index: 3,
+      name: 'A Comprehensive Analysis of Teaching First Year Composition',
+      index: 2
     },
+    {
+        name: 'Qenehelo',
+        index: 3
+    },
+    {
+        name: 'Superior Sisters',
+        index: 3
+    }
   ]
 
   state = {
