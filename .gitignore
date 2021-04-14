@@ -1,4 +1,5 @@
 .gitignore
+.next
 node_modules
 Hours
 git-push.sh
